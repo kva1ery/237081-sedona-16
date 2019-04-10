@@ -35,6 +35,88 @@
     <img class="first-screen__image" src="http://placehold.it/229x39" width="229" height="39" alt="Sedona">
   </div>
 
+  <section class="comments">
+    <h1 class="comments__title main-title">Оставьте свой отзыв</h1>
+    <p class="comments__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+    <form class="comment-form form" action="https://echo.htmlacademy.ru">
+      <fieldset class="form__section">
+        <p class="form__title">Представьтесь:</p>
+
+        <div class="form__row">
+          <label class="form__label" for="name">Имя*:</label>
+          <input class="form__input" id="name" type="text" placeholder="Петр" required>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="surname">Фамилия*:</label>
+          <input class="form__input" id="surname" type="text" placeholder="Иванов" required>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="patronymic">Отчество:</label>
+          <input class="form__input" id="patronymic" type="text" placeholder="Александрович">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__section">
+        <p class="form__title">Контактная информация:</p>
+
+        <div class="form__row">
+          <label class="form__label" for="phone">Контактный телефон*:</label>
+          <input class="form__input form__input--phone" id="phone" type="text" placeholder="Введите телефон" required>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="email">Электронная почта*:</label>
+          <input class="form__input form__input--email" id="email" type="text" placeholder="Введите e-mail" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__section">
+        <p class="form__title">Ваше общее впечатление:</p>
+
+        <div class="form__row">
+          <label class="form__label"><input class="form__radio" type="radio" name="impression"> Скорее положительное</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label"> <input class="form__radio" type="radio" name="impression"> Скорее отрицательное</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label"><input class="form__radio" type="radio" name="impression"> Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__section">
+        <p class="form__title">Посещенные достопримечательности:</p>
+
+        <div class="form__row">
+          <label class="form__label"><input class="form__checkbox" type="checkbox" checked> Мост Дьявола</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label"> <input class="form__checkbox" type="checkbox" checked> Гора-Колокол</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label"><input class="form__checkbox" type="checkbox" checked> Слайд-парк</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label"><input class="form__checkbox" type="checkbox"> Красные скалы</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__section">
+        <p class="form__title">Опишите свои эмоции:</p>
+        <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+
+      <button class="form__button button" type="submit">Отправить отзыв</button>
+    </form>
+  </section>
 </main>
 
 <footer class="page-footer">
