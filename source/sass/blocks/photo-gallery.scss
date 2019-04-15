@@ -1,0 +1,30 @@
+.photo-gallery__list {
+  @include list-reset;
+}
+
+.photo-gallery__image {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-gallery__caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+.photo-gallery__like-button {
+  background-color: #ffffff;
+  border: none;
+  color: #b2b2b2;
+}
+
+.photo-gallery__like-count {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}

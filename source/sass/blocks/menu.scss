@@ -1,0 +1,19 @@
+.menu {
+  @include list-reset;
+}
+
+.menu__item a {
+  display: block;
+  width: 320px;
+  height: 55px;
+  padding: 9px 15px 6px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $base-color;
+}
