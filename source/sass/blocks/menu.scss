@@ -4,8 +4,6 @@
 
 .menu__item a {
   display: block;
-  width: 320px;
-  height: 55px;
   padding: 9px 15px 6px;
 
   font-weight: 700;
@@ -16,4 +14,38 @@
   text-decoration: none;
   text-align: center;
   background-color: $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    display: flex;
+  }
+
+  .menu__item {
+    display: block;
+    width: 123px;
+    padding: 14px 15px 16px;
+    text-align: center;
+  }
+
+  .menu__item:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .menu__item a {
+    display: inline;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    width: 209px;
+  }
 }
