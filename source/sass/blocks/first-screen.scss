@@ -1,4 +1,8 @@
 .first-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 389px;
   background: url("../img/bg-back-mobile@1x.jpg") center no-repeat #deecf5;
 }
 
