@@ -1,8 +1,21 @@
 .main-title {
+  margin: 45px auto 30px auto;
+  padding: 0 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    margin-top: 70px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 42px;
+  }
 }

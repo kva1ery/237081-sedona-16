@@ -2,6 +2,14 @@
   @include list-reset;
 }
 
+.photo-gallery__item {
+  margin-bottom: 40px;
+}
+
+.photo-gallery__item figure{
+  margin: 0;
+}
+
 .photo-gallery__image {
   width: 280px;
   height: 280px;
@@ -27,4 +35,26 @@
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-gallery__item {
+    width: 50%;
+    margin: 0;
+
+    &--full {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__item {
+    width: 400px;
+  }
 }

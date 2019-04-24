@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 389px;
+  height: 158px;
   background: url("../img/bg-back-mobile@1x.jpg") center no-repeat #deecf5;
+
+  &--main {
+    height: 389px;
+  }
 }
 
 .first-screen__image {
