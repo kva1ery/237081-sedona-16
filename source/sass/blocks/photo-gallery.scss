@@ -6,7 +6,7 @@
   margin-bottom: 40px;
 }
 
-.photo-gallery__item figure{
+.photo-gallery__item figure {
   margin: 0;
 }
 
@@ -22,7 +22,6 @@
   color: #000000;
   text-transform: uppercase;
 }
-
 
 .photo-gallery__like-button {
   background-color: #ffffff;
@@ -50,11 +49,19 @@
     &--full {
       width: 100%;
     }
+
+    & .photo-gallery__image {
+      width: 100%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo-gallery__item {
     width: 400px;
+
+    &--full {
+      width: 100%;
+    }
   }
 }

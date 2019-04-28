@@ -14,3 +14,19 @@
   width: 282px;
   height: 214px;
 }
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    height: 290px;
+
+    &--main {
+      height: 518px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    height: 300px;
+  }
+}

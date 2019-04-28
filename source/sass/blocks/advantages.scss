@@ -99,18 +99,15 @@
     flex-wrap: wrap;
   }
 
-  .advantages__item--first {
+  .advantages__item--first,
+  .advantages__item--second {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
   .advantages__item--second {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .advantages__info {
+    & .advantages__info {
       order: 2;
     }
   }
@@ -139,10 +136,10 @@
     margin: 0 auto;
     padding: 160px 40px 65px;
     flex-grow: 1;
-  }
 
-  .advantages__subitem--last-on-wide {
-    order: 1;
+    &--last-on-wide {
+      order: 1;
+    }
   }
 }
 
