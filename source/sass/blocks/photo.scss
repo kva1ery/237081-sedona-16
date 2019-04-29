@@ -1,7 +1,25 @@
+.photo {
+  padding: 0 20px;
+}
+
 .photo__text {
+  margin: 0;
+  margin-bottom: 50px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    padding: 0;
+  }
+
+  .photo__text {
+    width: 440px;
+    margin: 0 auto 70px;
+  }
 }

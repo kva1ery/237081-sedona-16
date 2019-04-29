@@ -1,8 +1,32 @@
 .first-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 158px;
   background: url("../img/bg-back-mobile@1x.jpg") center no-repeat #deecf5;
+
+  &--main {
+    height: 389px;
+  }
 }
 
 .first-screen__image {
   width: 282px;
   height: 214px;
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    height: 290px;
+
+    &--main {
+      height: 518px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    height: 300px;
+  }
 }

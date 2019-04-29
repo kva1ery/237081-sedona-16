@@ -1,5 +1,14 @@
 .page-header {
+  position: relative;
+
   background-color: #ffffff;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  bottom: -33px;
+  margin-left: -51px;
 }
 
 .page-header__logo-image {

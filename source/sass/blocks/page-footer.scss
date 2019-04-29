@@ -1,4 +1,5 @@
 .page-footer {
+  padding: 36px 20px;
   text-align: center;
 }
 
@@ -8,4 +9,27 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.page-footer__social {
+  margin: 40px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .page-footer__social {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
