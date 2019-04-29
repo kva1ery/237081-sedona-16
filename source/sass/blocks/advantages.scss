@@ -99,16 +99,18 @@
     flex-wrap: wrap;
   }
 
-  .advantages__item--first,
-  .advantages__item--second {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+  .advantages__item {
+    &--first,
+    &--second {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
-  .advantages__item--second {
-    & .advantages__info {
-      order: 2;
+    &--second {
+      .advantages__info {
+        order: 2;
+      }
     }
   }
 
