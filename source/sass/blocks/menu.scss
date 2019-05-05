@@ -5,7 +5,7 @@
 .menu__item {
   a {
     display: block;
-    padding: 9px 15px 6px;
+    padding: 6px 15px 8px;
 
     font-weight: 700;
     font-size: 18px;
@@ -14,7 +14,14 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+
     background-color: $base-color;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+  }
+
+  &:last-child a {
+    border-bottom: none;
   }
 }
 
