@@ -29,6 +29,7 @@ body {
   color: #333333;
 
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 img {
@@ -53,4 +54,14 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.on-wide-only {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .on-wide-only {
+    display: inline;
+  }
 }
