@@ -4,7 +4,7 @@
 
 .advantages__intro {
   position: relative;
-  padding: 40px 32px;
+  padding: 39px 32px 41px;
   box-shadow: inset 0 -16px $base-color;
 
   &::before {
@@ -34,7 +34,7 @@
 
 .advantages__intro-text {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 28px;
 
   font-weight: 400;
   font-size: 14px;
@@ -49,14 +49,14 @@
 .advantages__info {
   position: relative;
 
-  padding: 24px 36px 29px 36px;
+  padding: 24px 35px 29px 36px;
   background-color: #eeeeee;
 
   &::before {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 3px;
+    bottom: 1px;
 
     display: block;
     width: 280px;
@@ -71,7 +71,7 @@
   }
 
   &--expanded {
-    padding: 40px 27px;
+    padding: 39px 26px;
 
     background-color: $base-color;
     color: #ffffff;
@@ -117,7 +117,7 @@
 
 .advantages__sublist {
   margin: 0;
-  padding: 22px 20px 33px;
+  padding: 24px 20px 36px;
 
   text-align: left;
   color: #000000;
@@ -129,7 +129,7 @@
 .advantages__subitem {
   position: relative;
   margin-bottom: 16px;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-left: 49px;
 
 
@@ -140,7 +140,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
 
@@ -206,9 +206,33 @@
   }
 
   .advantages__item {
+    width: 168px;
+    margin: 0 auto;
+    padding: 44px 45px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    &:nth-last-child(1) {
+      width: 160px;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    &:nth-last-child(2) {
+      width: 150px;
+      padding-left: 52px;
+      padding-right: 52px;
+    }
+
+    &::before {
+      display: none;
+    }
+
     &--first,
     &--second {
       display: flex;
+      margin: 0;
+      padding: 0;
       flex-wrap: wrap;
       width: 100%;
     }
@@ -221,10 +245,11 @@
   }
 
   .advantages__info {
-    padding: 46px 46px;
-    padding-bottom: 42px;
-    width: 154px;
-    flex-grow: 1;
+    &--expanded {
+      padding: 44px 46px;
+      width: 154px;
+      flex-grow: 1;
+    }
   }
 
   .advantages__title {
@@ -249,10 +274,11 @@
   }
 
   .advantages__subitem {
-    width: 176px;
+    width: 170px;
     margin: 0 auto;
-    padding: 160px 50px 40px;
+    padding: 158px 43px 41px;
     flex-grow: 1;
+    flex-shrink: 0;
 
     &::before {
       top: 57px;
@@ -262,12 +288,14 @@
       height: 77px;
     }
 
+    &:nth-child(3) {
+      width: 160px;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
     &--last-on-wide {
       order: 1;
-
-      width: 196px;
-      padding-left: 40px;
-      padding-right: 40px;
     }
   }
 
