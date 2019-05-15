@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 58px;
+  padding: 15px 20px 17px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $base-color;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

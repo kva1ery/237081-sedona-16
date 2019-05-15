@@ -1,0 +1,42 @@
+.contacts__title {
+  margin: 25px 0 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.contacts__text {
+  margin: 19px 27px 0;
+
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts__button {
+  width: 280px;
+  margin: 36px 20px 0;
+}
+
+.contacts__map-link {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 350px;
+  margin-top: 49px;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 27px;
+  height: 27px;
+  margin-left: -13px;
+  margin-top: -13px;
+}
